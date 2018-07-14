@@ -1,3 +1,11 @@
-# Crawler
-
-pip install BeautifulSoup
+# python-Crawler
+--------------------
+- 豆瓣top-250 img爬取
+- 斗图网图片抓取
+- 潇湘书院小说抓取
+- 微信给好友发送消息操作
+- qqtn头像下载
+- 51job网站求职信息抓取
+- 唯品会女装图片抓取
+- 红袖网小说抓取
+- tp.388g.com美女写真图片抓取
