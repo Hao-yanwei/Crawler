@@ -78,6 +78,6 @@ class Spider(object):
 
 if __name__ == "__main__":
     url = 'http://www.xxsy.net/search?vip=0&sort=2'
-    path = "E:/171125/爬虫/meinv/11处特工皇妃.txt"
+    path = "E:/meinv/11处特工皇妃.txt"
     spr = Spider(url,path)
     spr.Runmain(url)
