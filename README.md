@@ -1,4 +1,4 @@
-# python-Crawler
+# Python-Crawler
 --------------------
 - 豆瓣top-250 img爬取
 - 斗图网图片抓取
@@ -10,3 +10,4 @@
 - tp.388g.com美女写真图片抓取
 - [文字识别处理--Tesseract练习 ](https://github.com/HAOyanWEI24/Crawler/tree/master/verify)
 - 模拟浏览器登陆 知乎 `zhihulogin.py`
+- [网易云音乐爬虫](https://github.com/HAOyanWEI24/Crawler/tree/master/music163-master)
