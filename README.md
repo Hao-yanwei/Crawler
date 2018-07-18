@@ -9,5 +9,5 @@
 - 唯品会女装图片抓取
 - 红袖网小说抓取
 - tp.388g.com美女写真图片抓取
-- 文字识别处理--Tesseract练习 `verify.py`(https://github.com/HAOyanWEI24/Crawler/tree/master/verify)
+- 文字识别处理--Tesseract练习 `verify.py`[https://github.com/HAOyanWEI24/Crawler/tree/master/verify]
 - 模拟浏览器登陆 知乎 `zhihulogin.py`
