@@ -14,8 +14,8 @@
       <file leaf-file-name="comment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/music163/spiders/comment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="79" selection-start-line="79" selection-end-line="84" selection-end-column="57" />
+            <state relative-caret-position="106">
+              <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -26,7 +26,7 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/music163/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="646">
               <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#209#241#0" expanded="true" />
@@ -35,24 +35,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/music163/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-521">
-              <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+            <state relative-caret-position="-939">
+              <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jiezhou.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jiezhou.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/music163/spiders/jiezhou.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-627">
+            <state relative-caret-position="171">
               <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music163/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57" />
           </provider>
         </entry>
       </file>
@@ -62,8 +69,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/music163/pipelines.py" />
-        <option value="$PROJECT_DIR$/music163/settings.py" />
         <option value="$PROJECT_DIR$/music163/spiders/comment.py" />
+        <option value="$PROJECT_DIR$/music163/settings.py" />
       </list>
     </option>
   </component>
@@ -145,7 +152,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -153,15 +159,15 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.47578347" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.23646724" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -191,19 +197,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music163/spiders/comment.py">
+    <entry file="file://$PROJECT_DIR$/music163/spiders/jiezhou.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="79" selection-start-line="79" selection-end-line="84" selection-end-column="57" />
+        <state relative-caret-position="171">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/music163/spiders/comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music163/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/music163/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="646">
           <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="e#209#241#0" expanded="true" />
@@ -213,18 +234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/music163/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-521">
-          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music163/spiders/jiezhou.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-939">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
         </state>
       </provider>
     </entry>

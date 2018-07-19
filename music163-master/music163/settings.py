@@ -67,8 +67,8 @@ DOWNLOAD_DELAY = 3
 ITEM_PIPELINES = {
     # 'music163.pipelines.Music163Pipeline': 300,
     # 'music163.pipelines.MongoPipeline': 300,
-    'music163.pipelines.WangyinPipeline': 400,
-    'music163.pipelines.WangyinPipeline_a': 500,
+    'music163.pipelines.WangyinPipeline': 400,  # 歌曲
+    # 'music163.pipelines.WangyinPipeline_a': 500, #热门评论
 }
 
 # MONGODB_HOST = '127.0.0.1'
