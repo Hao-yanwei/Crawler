@@ -10,7 +10,10 @@
 - 斗图网图片抓取
 - 潇湘书院小说抓取  `xiaoxiangspider.py`
 - qqtn头像下载
+- [智联招聘分布式爬取](https://github.com/HAOyanWEI24/Crawler/tree/master/scrapy-redis_zhilian)
+- [起点免费小说分布式爬取](https://github.com/HAOyanWEI24/Crawler/tree/master/novel)
 - [51job网站求职信息抓取](https://github.com/HAOyanWEI24/Crawler/tree/master/job51)
+- [GitHub模拟登陆](https://github.com/HAOyanWEI24/Crawler/tree/master/gitLogin)
 - 唯品会女装图片抓取
 - 红袖网小说抓取
 - tp.388g.com美女写真图片抓取
