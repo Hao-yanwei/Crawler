@@ -63,7 +63,7 @@ Master端只有一个Redis数据库，负责将未处理的Request去重和任�
 ![图片1.png](https://upload-images.jianshu.io/upload_images/6591571-0aa3ae1f42aae80d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ----------------------------------------
-######核心参数
+###### 核心参数
 `settings.py`
 ```
 # ===========================================================================
@@ -136,24 +136,17 @@ class Spider(RedisCrawlSpider):#继承scrapy-redis中定义好的类
 ```
 ****
 注释：
-> * 1. 当使用分布式爬虫爬取数据时，要保证redis数据库例远程之间可以连接
-> * 2. Master端和Slaver端要使用统一的redis数据库保证项目的连接使用
-> * 3. 在Linux中配置Master端，修改配置文件 redis.conf，打开redis.conf配置文件，示例:linux系统: `sudo vi /etc/redis/redis.conf`,Master端`redis.conf`里注释`bind 127.0.0.1`，Slave端才能远程连接到Master端的Redis数据库。如果要把当前电脑当成Master端把`bind 127.0.0.1`注释掉，如果是Slaver端可以不修改
-> * 4. `redis.conf`中`daemonize`配置
-  `daemonize no`表示Redis默认不作为守护进程运行，即在 运行`redis-server /etc/redis/redis.conf`时，将显示Redis 启动提示画面；`daemonize yes`则默认后台运行，不必重新启动新的终端窗口执行其他命令，看个人喜好和实际需
-> * 5.  Linux中启动redis服务
-推荐指定配置文件启动
-`sudo redis-server /etc/redis/redis.conf`或者`sudo service redis start`
-> * 6.  Linux中停止redis服务
-`sudo kill -9 redis的进程id`或者`sudo service redis stop`
-> * 7. Linux中重启redis服务
-`sudo service redis restart`
-  当配置文件重新配置后，一般会重启服务器这样配置才生效
-> * 8. 保证存储数据库之间的连接，当master和slaver端要同时存入master端的mysql数据库，要保证slaver端是否可以连接master端的数据库
-> * 9.  [windows下远程连接Mysql](https://www.cnblogs.com/fnlingnzb-learner/p/5848405.html)
-> * 10. 在Ubuntu16.04下安装mysql：https://blog.csdn.net/xiangwanpeng/article/details/54562362
+> 1. 当使用分布式爬虫爬取数据时，要保证redis数据库例远程之间可以连接
+> 2. Master端和Slaver端要使用统一的redis数据库保证项目的连接使用
+> 3. 在Linux中配置Master端，修改配置文件 redis.conf，打开redis.conf配置文件，示例:linux系统: `sudo vi /etc/redis/redis.conf`,Master端`redis.conf`里注释`bind 127.0.0.1`，Slave端才能远程连接到Master端的Redis数据库。如果要把当前电脑当成Master端把`bind 127.0.0.1`注释掉，如果是Slaver端可以不修改
+> 4. `redis.conf`中`daemonize`配置`daemonize no`表示Redis默认不作为守护进程运行，即在 运行`redis-server /etc/redis/redis.conf`时，将显示Redis 启动提示画面；`daemonize yes`则默认后台运行，不必重新启动新的终端窗口执行其他命令，看个人喜好和实际需
+> 5.  Linux中启动redis服务推荐指定配置文件启动`sudo redis-server /etc/redis/redis.conf`或者`sudo service redis start`
+> 6.  Linux中停止redis服务`sudo kill -9 redis的进程id`或者`sudo service redis stop`
+> 7. Linux中重启redis服务 `sudo service redis restart`当配置文件重新配置后，一般会重启服务器这样配置才生效
+> 8. 保证存储数据库之间的连接，当master和slaver端要同时存入master端的mysql数据库，要保证slaver端是否可以连接master端的数据库
+> 9.  [windows下远程连接Mysql](https://www.cnblogs.com/fnlingnzb-learner/p/5848405.html)
+> 10. 在Ubuntu16.04下安装mysql：https://blog.csdn.net/xiangwanpeng/article/details/54562362
 
-本文参考链接：https://cuiqingcai.com/4048.html
 
 
 
