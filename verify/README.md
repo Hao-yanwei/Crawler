@@ -32,7 +32,7 @@ Tesseract 是一个 OCR 库,目前由 Google 赞助(Google 也是一家以 OCR �
 在 Windows 系统上也类似,你可以通过下面这行命令设置环境变量: `#setx TESSDATA_PREFIX C:\Program Files\Tesseract OCR\Tesseract`
 
 参考帖子：[http://blog.csdn.net/wenhao_ir/article/details/52213224](http://blog.csdn.net/wenhao_ir/article/details/52213224)
-######4. 安装pytesseract
+###### 4. 安装pytesseract
 `Tesseract` 是一个 Python 的命令行工具，不是通过 import 语句导入的库。安装之后,要用 tesseract 命令在 Python 的外面运行，也就是在Linux命令环境执行，但我们可以通过 pip 安装支持Python 版本的 Tesseract库，就可以支持在python内页可以使用Tesseract库了：
 Python3安装命令：`sudo pip3 install pytesseract`
 
