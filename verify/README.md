@@ -26,6 +26,7 @@ Tesseract 是一个 OCR 库,目前由 Google 赞助(Google 也是一家以 OCR �
 ###### 3.2 Windows 系统
 
 下载可执行安装文件[https://code.google.com/p/tesseract-ocr/downloads/list](https://code.google.com/p/tesseract-ocr/downloads/list)安装。
+
 百度经验：https://jingyan.baidu.com/article/219f4bf788addfde442d38fe.html
 
 在 Windows 系统上也类似,你可以通过下面这行命令设置环境变量: `#setx TESSDATA_PREFIX C:\Program Files\Tesseract OCR\Tesseract`
