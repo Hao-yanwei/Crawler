@@ -9,7 +9,6 @@
 - 豆瓣top-250 img爬取
 - 斗图网图片抓取
 - 潇湘书院小说抓取  `xiaoxiangspider.py`
-- qqtn头像下载
 - [智联招聘分布式爬取](https://github.com/HAOyanWEI24/Crawler/tree/master/scrapy-redis_zhilian)
 - [起点免费小说分布式爬取](https://github.com/HAOyanWEI24/Crawler/tree/master/novel)
 - [51job网站求职信息抓取](https://github.com/HAOyanWEI24/Crawler/tree/master/job51)
