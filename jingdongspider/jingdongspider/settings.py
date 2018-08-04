@@ -64,10 +64,10 @@ DOWNLOAD_DELAY = 3
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#     # 'jingdongspider.pipelines.CommentPipeline': 300,
-#     # 'jingdongspider.pipelines.MySQLPipeline': 350,
-# }
+ITEM_PIPELINES = {
+    'jingdongspider.pipelines.CommentPipeline': 300,
+    'jingdongspider.pipelines.MySQLPipeline': 350,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -95,7 +95,7 @@ DOWNLOAD_DELAY = 3
 # ======================================================================
 #Mysql数据库的配置信息
 MYSQL_HOST = '127.0.0.1'
-MYSQL_DBNAME = 'jingdong'         #数据库名字，请修改
+MYSQL_DBNAME = 'jingdong'  #数据库名字，请修改
 MYSQL_USER = 'root'             #数据库账号，请修改
 MYSQL_PASSWD = 'admin123'         #数据库密码，请修改
 

@@ -35,42 +35,43 @@ class JingdongCommentSpider(scrapy.Spider):
         """
         解析京东商品评论的url
         """
-        com_url = 'https://sclub.jd.com/comment/productPageComments.action?productId=' + str(id) +'&score=0&sortType=5&page=0&pageSize=10'
-        yield scrapy.Request(com_url, callback=self.parse_getCommentnum)
+        # url = 'https://sclub.jd.com/comment/productPageComments.action?productId=' + str(id) +'&score=0&sortType=5&page=0&pageSize=10'
+        # yield scrapy.Request(url, callback=self.parse_getCommentnum)
+        comment_num = "https://club.jd.com/comment/productCommentSummaries.action?referenceIds=" + str(id)
+        com = requests.get(comment_num).text
+        date = json.loads(com)
+        comment_nums = date['CommentsCount'][0]['ShowCount']
+        print(comment_nums)
+        comment_total = int(comment_nums)
+        if comment_total % 10 == 0:  # 算出评论的页数，一页10条评论
+            page = comment_total//10
+        else:
+            page = comment_total//10 + 1
 
-        """
-        通过递归原理解析下一页
-        下一页网页xpath解析地址
-        """
-        # comment_num = "https://club.jd.com/comment/productCommentSummaries.action?referenceIds=" + str(id)
-        # com = requests.get(comment_num).text
-        # date = json.loads(com)
-        # comment_nums = date['CommentsCount'][0]['ShowCount']
-        # comment_total = int(comment_nums)
-        # if comment_total % 10 == 0:  # 算出评论的页数，一页10条评论
-        #     page = comment_total//10
-        # else:
-        #     page = comment_total//10 + 1
-        # for k in range(0, page):
-        #     '''
-        #     京东下一页评论接口
-        #     '''
-        #     url ='https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv2394&productId='+ str(id) +'&score=0&sortType=5&page='+str(k)+'&pageSize=10&isShadowSku=0&fold=1'
-        #     # print(">>>>>>>>>>", url)
-        #     yield scrapy.Request(url, callback=self.parseDetails)
+
+        for k in range(page):
+            '''
+            京东下一页评论接口
+            '''
+            com_url = 'https://sclub.jd.com/comment/productPageComments.action?productId=' + str(id) +'&score=0&sortType=5&page='+str(k)+'&pageSize=10'
+            # print(">>>>>>>>>>", com_url)
+            yield scrapy.Request(com_url, callback=self.parse_getCommentnum)
+            # yield scrapy.Request(com_url, callback=self.parseDetails)
+
 
     def parse_getCommentnum(self, response):
         js = json.loads(response.text)
+        # print(js)
         comments = js['comments']  # 该页所有评论
 
         items = []
         for comment in comments:
             item1 = commentItem()
             item1['user_name'] = comment['nickname']  # 用户名
-            item1['user_ID'] = comment['id']       #  用户
+            item1['user_id'] = comment['id']       #  用户id
             item1['userProvince'] = comment['userProvince']  # 用户评论用户来自的地区
             item1['content'] = comment['content']  #  评论
-            item1['good_ID'] = comment['referenceId']  # 评论的商品ID
+            item1['good_id'] = comment['referenceId']  # 评论的商品ID
             item1['good_name'] = comment['referenceName']  # 评论的商品名字
             item1['date'] = comment['referenceTime']   # 评论时间
             item1['replyCount'] = comment['replyCount']  # 回复数

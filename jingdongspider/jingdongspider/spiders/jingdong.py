@@ -80,10 +80,10 @@ class JingdongSpider(scrapy.Spider):
         # response.text是一个json格式的
         date = json.loads(response.text)
         # print(date)
-        item['comment_num']= date['CommentsCount'][0]['CommentCountStr']
-        item['AfterCount'] = date['CommentsCount'][0]['AfterCount']
-        item['GoodCountStr']= date['CommentsCount'][0]['GoodCountStr']
-        item['PoorCount']= date['CommentsCount'][0]['PoorCount']
+        item['comment_num']= date['CommentsCount'][0]['CommentCountStr']   # 评论数量
+        item['AfterCount'] = date['CommentsCount'][0]['AfterCount']   # 好评
+        item['GoodCountStr']= date['CommentsCount'][0]['GoodCountStr']  # 中评
+        item['PoorCount']= date['CommentsCount'][0]['PoorCount']  # 差评
 
         # for field in item.fields:
         #     try:

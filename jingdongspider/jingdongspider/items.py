@@ -24,10 +24,10 @@ class JingdongspiderItem(scrapy.Item):
 
 class commentItem(scrapy.Item):
     user_name = scrapy.Field()   # 评论用户的名字
-    user_ID = scrapy.Field()  # 评论用户的ID
+    user_id = scrapy.Field()  # 评论用户的ID
     userProvince = scrapy.Field()  # 评论用户来自的地区
     content = scrapy.Field()  # 评论内容
-    good_ID = scrapy.Field()  # 评论的商品ID
+    good_id = scrapy.Field()  # 评论的商品ID
     good_name = scrapy.Field()  # 评论的商品名字
     date = scrapy.Field()   # 评论时间
     replyCount = scrapy.Field()   # 回复数
