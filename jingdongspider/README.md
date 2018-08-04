@@ -2,10 +2,10 @@
 -----------------
 #### 爬取思路
 
-> 1.分析页面，定义爬取字段
-> 2.观察网页，分析接口url，通过`xpath`和`json`解析爬取内容字段
-> 3.在`pipelines.py`写入存储方式
-> 4.开始爬取
+>  1. 分析页面，定义爬取字段
+>  2. 观察网页，分析接口url，通过`xpath`和`json`解析爬取内容字段
+>  3. 在`pipelines.py`写入存储方式
+>  4. 开始爬取
 ---------------------
 **1.分析网页，定义字段**
 
@@ -44,7 +44,7 @@
 #### 接口思路解析：
 
 京东网页中的很多数据是写在js中的，需要在network中查找接口路由，从而获得其真正所在的url地址，通过不同的id与接口组合得到不同的解析内容，分析如下：
-######分析接口：
+###### 分析接口：
 ![商品价格接口分析.png](https://upload-images.jianshu.io/upload_images/6591571-a28ffbbbd7aea80d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
@@ -56,7 +56,9 @@
 
 ![Image 6.png](https://upload-images.jianshu.io/upload_images/6591571-f150567ffed57ab0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###### 京东评论js接口url:   `https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv2394&productId=6023682&score=0&sortType=5&page=2&pageSize=10&isShadowSku=0&fold=1`
+###### 京东评论js接口url:  
+`https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv2394&productId=6023682&score=0&sortType=5&page=2&pageSize=10&isShadowSku=0&fold=1`
+
 ----------------
 
 
