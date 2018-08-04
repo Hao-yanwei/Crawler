@@ -4,9 +4,9 @@
 - 开发语言：`Python3`
 - 数据库：`MySQL 5.7` `Redis 3.0.6`
 - 开发工具：
-           Python编辑器：`Pycharm 2018.1/sublime3`；
-           MySQL管理工具：`Navicat for MySQL`；
-           Redis视图工具：`RedisDesktopManager`;
+           >  Python编辑器：`Pycharm 2018.1/sublime3`；
+           >  MySQL管理工具：`Navicat for MySQL`；
+           >  Redis视图工具：`RedisDesktopManager`;
 **********
 ### 项目内容
 - 豆瓣top-250 img爬取
