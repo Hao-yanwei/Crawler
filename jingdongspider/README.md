@@ -1,10 +1,10 @@
 
 -----------------
 #### 爬取思路
-1.分析页面，定义爬取字段
- 2.观察网页，分析接口url，通过`xpath`和`json`解析爬取内容字段
- 3.在`pipelines.py`写入存储方式
- 4.开始爬取
+  > 1.分析页面，定义爬取字段
+  > 2.观察网页，分析接口url，通过`xpath`和`json`解析爬取内容字段
+  > 3.在`pipelines.py`写入存储方式
+  > 4.开始爬取
 ---------------------
 **1.分析网页，定义字段**
 
@@ -59,7 +59,7 @@
 ----------------
 
 
-####存入Mysql数据库
+#### 存入Mysql数据库
 ![商品详情.png](https://upload-images.jianshu.io/upload_images/6591571-f63b55bd8e935ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![评论详情 2.png](https://upload-images.jianshu.io/upload_images/6591571-e35cba5575ea6fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
