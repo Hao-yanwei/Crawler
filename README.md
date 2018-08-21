@@ -23,3 +23,4 @@
 - 模拟浏览器登陆 知乎 `zhihulogin.py`
 - [网易云音乐爬虫](https://github.com/HAOyanWEI24/Crawler/tree/master/music163-master)
 - [京东价格信息及其评论爬虫](https://github.com/HAOyanWEI24/Crawler/tree/master/jingdongspider)
+- [新浪微博抓取](https://github.com/HAOyanWEI24/Crawler/tree/master/sina)
