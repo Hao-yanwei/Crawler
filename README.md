@@ -7,6 +7,7 @@
 - Python编辑器：`Pycharm 2018.1/sublime3`；
 - MySQL管理工具：`Navicat for MySQL`；
 - Redis视图工具：`RedisDesktopManager`;
+- MongoDB：`MongoDB Compass Community`;
 **********
 ### 项目内容
 - 豆瓣top-250 img爬取
