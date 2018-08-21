@@ -7,7 +7,7 @@
 - Python编辑器：`Pycharm 2018.1/sublime3`；
 - MySQL管理工具：`Navicat for MySQL`；
 - Redis视图工具：`RedisDesktopManager`;
-- MongoDB：`MongoDB Compass Community`;
+- MongoDB可视化工具：`MongoDB Compass Community`;
 **********
 ### 项目内容
 - 豆瓣top-250 img爬取
@@ -24,4 +24,4 @@
 - 模拟浏览器登陆 知乎 `zhihulogin.py`
 - [网易云音乐爬虫](https://github.com/HAOyanWEI24/Crawler/tree/master/music163-master)
 - [京东价格信息及其评论爬虫](https://github.com/HAOyanWEI24/Crawler/tree/master/jingdongspider)
-- [新浪微博抓取](https://github.com/HAOyanWEI24/Crawler/tree/master/sina)
+- [新浪微博抓取存储MongoDB](https://github.com/HAOyanWEI24/Crawler/tree/master/sina)
