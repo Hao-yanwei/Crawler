@@ -5,7 +5,7 @@ import pytesseract
 from PIL import Image
 
 # 使用PIL的Image.open()函数加载图片
-image = Image.open("3.png")
+image = Image.open("code2.jpg")
 # print(image)
 
 # 使用 pytesseract 模块的image_to_string把图片识别成文字
