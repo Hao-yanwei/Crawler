@@ -191,6 +191,7 @@ d = path.dirname(__file__)
 
 wc.to_file(path.join(d,"yuebing.png"))
 ```
+![image](http://upload-images.jianshu.io/upload_images/6591571-4b343f10a64f446c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 `知识点：`
 
 font_path : string //字体路径，需要展现什么字体就把该字体路径+后缀名写上，如：font_path = '黑体.ttf'；
@@ -201,7 +202,7 @@ max_font_size : int or None (default=None) //显示的最大的字体大小 ；
 fit_words(frequencies) //根据词频生成词云（frequencies，为字典类型）
 
 不同关键词word对应的sales之和的统计分析
-![image](http://upload-images.jianshu.io/upload_images/6591571-4b343f10a64f446c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 （说明：例如 词语 ‘广式’，则统计商品标题中含有‘广式’一词的商品的销量之和，即求出具有‘广式’风格的商品销量之和）
 
 
